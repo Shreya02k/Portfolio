@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+        integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+        integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="Resources/aos/aos.css" />
+    <script src="Resources/aos/aos.js"></script>
+
+    <link rel="stylesheet" href="Resources/custom.css">
+
+    <meta name="author" content="Shreya Kumari" />
+    <meta name="description" content="This is a portfolio website." />
+    <meta name="keywords" content="" />
+</head>
+
+<body class="">
+    <header>
+      <nav class="navbar navbar-dark ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="INDEX.HTML"><i
+            class="fa-solid fa-house"></i> Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Content</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="INDEX.HTML">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://drive.google.com/file/d/1God07fMgsrwtLRL32J7nSIGTdAiJaZ6D/view?usp=sharing" target="_blank">Download Resume</a>
+                </li>             
+               </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+          <div >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="btn btn-outline-warning" href="" data-bs-toggle="modal"
+                    data-bs-target="#ContactModal">Get In Touch!</a>
+            </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+        <div class="container" data-aos="zoom-out-up" data-aos-duration="2000">
+            <svg id="up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#0c0c16" fill-opacity="1"
+                    d="M0,192L14.1,176C28.2,160,56,128,85,149.3C112.9,171,141,245,169,234.7C197.6,224,226,128,254,117.3C282.4,107,311,181,339,186.7C367.1,192,395,128,424,90.7C451.8,53,480,43,508,53.3C536.5,64,565,96,593,106.7C621.2,117,649,107,678,128C705.9,149,734,203,762,202.7C790.6,203,819,149,847,106.7C875.3,64,904,32,932,58.7C960,85,988,171,1016,197.3C1044.7,224,1073,192,1101,197.3C1129.4,203,1158,245,1186,256C1214.1,267,1242,245,1271,218.7C1298.8,192,1327,160,1355,144C1383.5,128,1412,128,1426,128L1440,128L1440,320L1425.9,320C1411.8,320,1384,320,1355,320C1327.1,320,1299,320,1271,320C1242.4,320,1214,320,1186,320C1157.6,320,1129,320,1101,320C1072.9,320,1045,320,1016,320C988.2,320,960,320,932,320C903.5,320,875,320,847,320C818.8,320,791,320,762,320C734.1,320,706,320,678,320C649.4,320,621,320,593,320C564.7,320,536,320,508,320C480,320,452,320,424,320C395.3,320,367,320,339,320C310.6,320,282,320,254,320C225.9,320,198,320,169,320C141.2,320,113,320,85,320C56.5,320,28,320,14,320L0,320Z">
+                </path>
+            </svg>
+
+            <img src="Resources/sh.png" alt=" Image ">
+            <p>
+                HELLO, I AM,<BR>
+                <SPAn>SHREYA KUMARI</SPAn></BR>
+                I AM A WEB DEVELOPER
+            </p>
+
+
+        </div>
+    </header>
+    <section class="container-fluid text-white pb-4">
+        <div class="row text-center">
+            <div class="col">
+                <div  class="p-2" data-aos="zoom-in-up" data-aos-duration="2000" >
+                    <p class="m-0"><i class="fa-solid fa-mobile-screen fa-2x"></i></p>
+                <a class="nav-link" href="tel:9811000000">7042356xxx</a>
+                </div>
+            </div>
+            <div class="col">
+                <div  class="p-2" data-aos="zoom-in-up" data-aos-duration="2000">
+                    <p class="m-0"><i class="fa-regular fa-envelope fa-2x"></i></p>
+                <a class="nav-link" href="mailto:shreyaak336@gmail.com">shreyaak336@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="text-white">
+    <section id="projects" class=" text-white text-center py-5 my-4">
+        <div class="container">
+          <h2>Our Projects</h2>
+          <p class="m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, debitis.</p>
+          <div class="row container">
+            <div class="col-sm card m-2" style="width: 18rem;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <img src="https://cdn.pixabay.com/photo/2023/05/07/21/06/ai-generated-7977128_640.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="col-sm card m-2" style="width: 18rem;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <img src="https://cdn.pixabay.com/photo/2017/05/10/19/29/robot-2301646_640.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="col-sm card m-2" style="width: 18rem;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <img src="https://cdn.pixabay.com/photo/2017/01/04/20/15/web-design-1953129_640.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="col-sm card m-2" style="width: 18rem;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                <img src="https://cdn.pixabay.com/photo/2017/06/26/08/13/workspace-2443050_640.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class=" my-4">
+        <div id="carouselExampleAutoplaying" class="carousel slide m-2" data-bs-ride="carousel" data-aos="fade-up"
+        data-aos-duration="3000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://cdn.pixabay.com/photo/2018/02/03/09/51/bulletin-board-3127287_1280.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://cdn.pixabay.com/photo/2018/05/03/11/38/skills-3371153_1280.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+    
+            <div class="carousel-item">
+              <img src="https://cdn.pixabay.com/photo/2017/02/04/15/25/online-marketing-2037545_640.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="container-fluid  pt-4 pb-3">
+        <div class="container" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+          <h3 class="text-center py-3 m-0 bg-danger p-2 text-white bg-opacity-70">Academics</h3>
+          <div class="row bg-danger-subtle bg-opacity-50 m-0 py-4 align-items-center">
+            <div class="col-sm-4 py-2 text-end border-end border-2 border-white text-danger">
+              <h4>10 <sup>th</sup> [School Name]</h4>
+              <h6>2020-2022</h6>
+            </div>
+            <div class="col-sm-8">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis similique ea ullam beatae veritatis
+                distinctio, excepturi enim iste deleniti sunt et repellat voluptates a. Iste.</p>
+            </div>
+          </div>
+          <div class="row bg-danger-subtle m-0 py-4 align-items-center">
+            <div class="col-sm-8 text-end">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis similique ea ullam beatae veritatis
+                distinctio, excepturi enim iste deleniti sunt et repellat voluptates a. Iste.</p>
+            </div>
+            <div class="col-sm-4 py-2 border-start border-2 border-white text-danger">
+              <h4>12 <sup>th</sup> [School Name]</h4>
+              <h6>2020-2022</h6>
+            </div>
+          </div>
+          <div class="row bg-danger-subtle m-0 py-4 align-items-center">
+            <div class="col-sm-4 py-2 text-end border-end border-2 border-white text-danger">
+              <h4>B.Tech [College Name]</h4>
+              <h6>2020-2022</h6>
+            </div>
+            <div class="col-sm-8">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis similique ea ullam beatae veritatis
+                distinctio, excepturi enim iste deleniti sunt et repellat voluptates a. Iste.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="container-fluid  py-5">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
+          <h3 class="text-center py-3 m-0 bg-danger bg-opacity-50 bg-gradient text-white">Experience</h3>
+          <div class="row bg-danger-subtle bg-opacity-50 m-0 py-4 align-items-center">
+            <div class="col-sm-4 py-2 text-end border-end border-2 border-white text-danger">
+              <h4>Lorem, ipsum dolor.</h4>
+              <h6>2020-2022</h6>
+            </div>
+            <div class="col-sm-8">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis similique ea ullam beatae veritatis
+                distinctio, excepturi enim iste deleniti sunt et repellat voluptates a. Iste.</p>
+            </div>
+          </div>
+          <div class="row bg-danger-subtle bg-opacity-50 m-0 py-4 align-items-center">
+            <div class="col-sm-8 text-end">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis similique ea ullam beatae veritatis
+                distinctio, excepturi enim iste deleniti sunt et repellat voluptates a. Iste.</p>
+            </div>
+            <div class="col-sm-4 py-2 border-start border-2 border-white text-danger">
+              <h4>Lorem, ipsum dolor.</h4>
+              <h6>2020-2022</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="p-3 text-white">
+      <footer class=" container-fluid p-5 text-center text-white">
+        <p>&copy; Rights Reserved and desgined by Shreya Kumari</p>
+        <a href="https://www.facebook.com/login/" target="_blank" class="text-white mx-2"><i class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href="https://www.instagram.com/sh_reyanvii?igsh=dXZhZGJsejdpOWRm"  target="_blank" class="text-white mx-2"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/shreya-kumari-8129b0236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="text-white mx-2"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+      </footer>
+    
+      <span id="top-button" class="btn btn-outline-warning"><i class="fa-solid fa-circle-arrow-up fa-2x"></i></span>
+    
+
+</body>
+<!-- Modal -->
+<div class="modal fade" id="ContactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-warning text-white">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Get In Touch!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form name="google-sheet">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" name="Name" pattern="[a-zA-Z ]+" maxlength="20" required placeholder="Enter your name"
+                class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Your Phone</label>
+              <input type="tel" name="Phone" class="form-control" pattern="[0-9]+" maxlength="10" minlength="10" required
+                placeholder="Enter your phone">
+              <div class="form-text">We'll never share your phone with anyone else.</div>
+            </div>
+            <button type="submit" class="bg-warning bg-opacity-50">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="Resources/scripts.js"></script>
+</html>
